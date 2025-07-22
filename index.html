@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body class="bg-gray-100 flex flex-col items-center p-5" style="  font-family: 'Signika', sans-serif;">
+
+    <h1 class="text-3xl font-bold text-gray-800 mb-5">Recipe Finder</h1>
+
+    <div class="w-full max-w-md">
+        <input type="text" id="searchInput" class="w-full p-2 border rounded" placeholder="Enter dish name...">
+        <button onclick="searchRecipe()" class="mt-2 w-full bg-blue-500 text-white p-2 rounded">Search</button>
+    </div>
+
+      <div id="loading" class="hidden mt-4">
+        <i class="fa-solid fa-spinner fa-spin text-2xl text-blue-500"></i>
+        <span class="text-gray-700">Fetching Recipe...</span>
+    </div>
+
+    <div id="recipeContainer" class="mt-5 w-full max-w-md bg-white p-4 rounded shadow hidden">
+        <h2 id="recipeTitle" class="text-xl font-semibold"></h2>
+        <img id="recipeImage" class="w-full mt-2 rounded" alt="Recipe Image">
+        <p id="recipeInstructions" class="mt-2 text-gray-700"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

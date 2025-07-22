@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Recipe Hub</title>
+   <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .nav-links li {
+    font-size: 1rem;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #e74c3c;
+}
+
+
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #ecf0f1;
+}
+
+.contact-section h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.contact-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+
+.contact-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #c0392b;
+}
+
+
+.contact-details {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.contact-details h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+   </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Recipe Hub</div>
+        <ul class="nav-links">
+            <li><a href="./home.html" target="_blank">Home</a></li>
+            <li><a href="home.html#recipes" target="_blank">Recipes</a></li>
+            <li><a href="./about.html" target="_blank">About</a></li>
+            <li><a href="./contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact" class="contact-section">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or want to share your feedback, feel free to reach out to us!</p>
+
+        <div class="contact-form">
+            <form action="submit-form.php" method="POST">
+                <div class="form-group">
+                   
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message:" name="message:" rows="5" placeholder="Write your message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-details">
+            <h2>Our Office</h2>
+            <p>Email: roshanmanjhi2631@gmail.com</p>
+            <p>Phone: +9022786935</p>
+            <p>Address:Matri Building Kamatghar Bhiwandi</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Recipe Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
